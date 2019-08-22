@@ -1,0 +1,37 @@
+
+
+
+Execution Context - Stores variables and which our code is evaluated and executed
+
+Global Execution Context - not inside a function
+                           Associated with the global object
+                           In a browser / window object
+
+GEC is associated with the EC ^
+
+GEC is for code that is not in a function
+
+the function is also in the GEC
+
+the first(); this new context is placed on the GEC as a EC
+
+
+
+ECO - Variable Object
+             -Argument object is created/has all arguments passed into function
+Hoisting     -scanned for function declarations/ for each function a property is created in the VO point to function (DEFINED)
+Hoisting     -Scanned for variable declarations/ each variable a property is created in VO /set to (UNDEFINED)
+
+Hoisting - functions/variables available before execution starts
+
+     Scope Chain
+     "This" Variable
+
+1. Creation Phase
+    -Creation of the variable object
+    -Creation of the Scope chain
+    -Determine the value of "this" variable
+
+2. Execution Phase
+    - The code of the function that generated the current EC is ran line by line
+

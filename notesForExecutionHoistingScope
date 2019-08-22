@@ -1,0 +1,74 @@
+//============================ Extra notes for deeper understanding =============================//
+
+    JavaScript needs to run in an environment called an Execution Context (Object). The default setting for
+ an Execution Context is Global (Global Execution Context) and any code not inside a function is
+ considered Global, so in the browser that's the Window Object. Properties are just variables
+ attached to objects.
+
+//Stacking
+
+            (5)
+3 Execution Context third() ->returns                   (4)
+2 Execution Context second()           2 Execution Context second() ->Active ->returns  //variable gets stored and returned
+1 Execution Context first()            1 Execution Context first()
+0 Global Execution Context             0 Global Execution Context
+
+             (3)
+1 Execution Context first() ->Active ->returns                 (2)                              (1)
+0 Global Execution Context                       0 Global Execution Context             first(); -> gets called
+
+
+
+//What happens in order
+
+0 Global Execution Context -> Variable name John is declared and first() is added to Stack
+
+1 Execution Context first() -> Variable a gets stored in the EC and not GC.
+                            -> Call the second function second();
+                            -> Second gets added to Stack
+
+2 Execution Context second() -> Variable b is stored in the EC.
+                             -> Call the third function third();
+                             -> Third gets added to Stack
+
+3 Execution Context third() -> The function contains two variables.
+                            -> Then Returns a value.
+                            -> Third gets removed from Stack.
+
+2 Execution Context second() -> Variable z gets stored in Active Context
+                             -> Returns a value
+                             -> Second gets removed from Stack
+
+
+//====================================================================================================================
+
+Execution Context Object
+
+Variable Object -> contains function arguments in variable declarations / function declarations
+Scope Chain -> contains variable objects and VO of all parents
+"this" variable -> refers to object
+
+function gets called and is added to stack
+1. Creation phase
+-Creation of VO
+-Creation of the Scope Chain
+-Determine value of the "this" variable
+
+2. Execution phase
+-the code of the function that generated the current Execution Context is ran line by line.
+
+
+Variable Object
+The argument object is created and contains all arguments passed to the function
+Hoisting ->Function declarations scanning, so then a property is then created in the Variable Object and now points to the function
+Hoisting ->Now scanned for variable declarations, so then a property is then created in the Variable Object and now set to UNDEFINED
+-->Meaning that they are available before execution phase actually starts
+
+Scope Chain
+
+"this" variable
+
+
+//====================================================================================================================
+
+
