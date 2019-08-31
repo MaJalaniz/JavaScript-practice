@@ -6,39 +6,43 @@
     <link href="css/domHtml.css" rel="stylesheet" >
 </head>
 <body>
-<div>
+<div id="wrapper">
     <header>
         <div id="page-banner">
-            <h1>Book </h1>
-            <p>Books for sale</p>
+            <h1>The Backloggery </h1>
+            <p>Games for sale</p>
             <form id="search-books">
-                <input type="text" placeholder="Search Books"/>
+                <input type="text" placeholder="Search games"/>
             </form>
         </div>
     </header>
-    <div id="book-list">
-        <h2 class="title">Books to read</h2>
+    <div id="game-list">
+        <h2 class="title">Games to checkout</h2>
         <ul>
             <li>
-                <span class="name">Name of the wind</span>
+                <span class="name">The Legend of Zelda: Twilight Princess</span>
                 <span class="delete">delete</span>
             </li>
             <li>
-                <span class="name">The wise mans fear</span>
+                <span class="name">Super Mario World</span>
                 <span class="delete">delete</span>
             </li>
             <li>
-                <span class="name">Kafka on the shore</span>
+                <span class="name">Croc</span>
                 <span class="delete">delete</span>
             </li>
             <li>
-                <span class="name">The master and the margarita</span>
+                <span class="name">Final Fantasy VII</span>
+                <span class="delete">delete</span>
+            </li>
+            <li>
+                <span class="name">Metal Gear Solid</span>
                 <span class="delete">delete</span>
             </li>
         </ul>
     </div>
-    <form id="add-book">
-        <input type="text" placeholder="Add a book">
+    <form id="add-game">
+        <input type="text" placeholder="Add a game">
         <button>Add</button>
     </form>
 
