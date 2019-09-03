@@ -29,6 +29,18 @@ const gameList = document.querySelector('#game-list');
 */
 //everything in the DOM/html is a node
 
+const banner = document.querySelector('#page-banner');
+//Finding Nodes
+console.log('#page-banner node name is', banner.nodeName);
+console.log('#page-banner node name is', banner.nodeType);
+console.log('#page-banner has child nodes: ', banner.hasChildNodes());
+
+//Cloning the Node
+//pass true for parameter/ clones the entire group
+//const clonedBanner = banner.cloneNode(true);
+//console.log(clonedBanner);
+
+
 
 
 
