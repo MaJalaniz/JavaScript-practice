@@ -1,16 +1,17 @@
 "use strict";
 /*
 let titles = document.getElementsByClassName('title');
-
+//returns html collection
 Array.from(titles).forEach(function(item) {
     console.log(item);
 });
 */
 
 
-
+/*
 const smw = document.querySelector('#game-list li:nth-child(2) .name');
 //const wrap = document.querySelector('');
+//returns node list
 
 console.log(smw);
 
@@ -19,11 +20,14 @@ let games = document.querySelectorAll('#game-list li .name');
 console.log(games);
 
 Array.from(games).forEach(function(game){
-    console.log(game)
-   //game.textContent = 'test';
+    //console.log(game.textContent)
+   game.textContent += ' (game title)';
 });
-
-
+const gameList = document.querySelector('#game-list');
+ //gameList.innerHTML = '<h2>Games and other games</h2>';
+ gameList.innerHTML += '<p>This is adding more html </p>';
+*/
+//everything in the DOM/html is a node
 
 
 
