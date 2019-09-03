@@ -27,8 +27,10 @@ const gameList = document.querySelector('#game-list');
  //gameList.innerHTML = '<h2>Games and other games</h2>';
  gameList.innerHTML += '<p>This is adding more html </p>';
 */
-//everything in the DOM/html is a node
 
+
+//everything in the DOM/html is a node
+/*
 const banner = document.querySelector('#page-banner');
 //Finding Nodes
 console.log('#page-banner node name is', banner.nodeName);
@@ -39,8 +41,17 @@ console.log('#page-banner has child nodes: ', banner.hasChildNodes());
 //pass true for parameter/ clones the entire group
 //const clonedBanner = banner.cloneNode(true);
 //console.log(clonedBanner);
+*/
 
 
+const gameList = document.querySelector('#game-list');
+//Traversing up the DOM/parents
+console.log('the parent node is: ', gameList.parentNode);
+console.log('the parent element is: ', gameList.parentElement.parentElement);
+
+//Traversing down the DOM/children
+console.log(gameList.childNodes); // all with spaces
+console.log(gameList.children);//single
 
 
 
