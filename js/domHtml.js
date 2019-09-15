@@ -44,14 +44,38 @@ console.log('#page-banner has child nodes: ', banner.hasChildNodes());
 */
 
 
-const gameList = document.querySelector('#game-list');
+//const gameList = document.querySelector('#game-list');
 //navigating siblings
+/*
 console.log('book-list next sibling is ', gameList.nextElementSibling);
 console.log('book-list next sibling is ', gameList.nextSibling);
 console.log('book-list next sibling is ', gameList.previousSibling);
 console.log('book-list next sibling is ', gameList.previousElementSibling);
 
 gameList.previousElementSibling.querySelector('p').innerHTML += '<br/>Too cool';
+*/
+let btn = document.querySelectorAll('#game-list .delete');
+console.log(btn);
+
+Array.from(btn).forEach(function(btn){
+    btn.addEventListener('click',function(e){
+
+        let li = e.target.parentElement;
+        li.parentNode.removeChild(li);
+        console.log(e.target)
+
+    });
+
+});
+
+
+
+
+
+
+
+
+
 
 //Traversing up the DOM/parents
 /*
