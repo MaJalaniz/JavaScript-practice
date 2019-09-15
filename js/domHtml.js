@@ -45,14 +45,24 @@ console.log('#page-banner has child nodes: ', banner.hasChildNodes());
 
 
 const gameList = document.querySelector('#game-list');
+//navigating siblings
+console.log('book-list next sibling is ', gameList.nextElementSibling);
+console.log('book-list next sibling is ', gameList.nextSibling);
+console.log('book-list next sibling is ', gameList.previousSibling);
+console.log('book-list next sibling is ', gameList.previousElementSibling);
+
+gameList.previousElementSibling.querySelector('p').innerHTML += '<br/>Too cool';
+
 //Traversing up the DOM/parents
+/*
 console.log('the parent node is: ', gameList.parentNode);
 console.log('the parent element is: ', gameList.parentElement.parentElement);
 
 //Traversing down the DOM/children
 console.log(gameList.childNodes); // all with spaces
 console.log(gameList.children);//single
-
+*/
+//Check back on video 8
 
 
 /*
