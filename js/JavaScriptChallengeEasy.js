@@ -28,21 +28,26 @@ first(otherNum);
 
 //Write a function that takes in a Base and Height and returns the
 //area of a triangle.
-
+/*
 function triangle(base, height){
     return (base * height)/2;
 }
 triangle(20,20);
-
+*/
 //===============================================================
 
 //Write a function that converts hours to seconds.
-
+/*
 function timeConvert(hour){
     return (hour * 60) * 60;
 }
 timeConvert(5);
-
+*/
 //===============================================================
 
-function nextInt()
+function nextInt(next){
+    return next + 1;
+}
+nextInt(-5);
+
+//===============================================================
