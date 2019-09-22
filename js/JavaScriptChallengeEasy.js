@@ -72,3 +72,17 @@ function remainder(one, two){
 remainder(15, 4);
 //===============================================================
 
+//Write a function that determines if a number is less than zero
+
+function ifZero(x){
+    if (x <= 0){
+        return true;
+    }else{
+        return false;
+    }
+}
+ifZero(-12);
+//================================================================
+
+
+
