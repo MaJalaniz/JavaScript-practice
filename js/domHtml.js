@@ -54,23 +54,28 @@ console.log('book-list next sibling is ', gameList.previousElementSibling);
 
 gameList.previousElementSibling.querySelector('p').innerHTML += '<br/>Too cool';
 */
-let btn = document.querySelectorAll('#game-list .delete');
-console.log(btn);
+var btn = document.querySelectorAll('.delete');
+//console.log(btn);
 
 Array.from(btn).forEach(function(btn){
     btn.addEventListener('click',function(e){
 
-        let li = e.target.parentElement;
+        var li = e.target.parentElement;
         li.parentNode.removeChild(li);
-        console.log(e.target)
+        console.log(li);
+        console.log(li.parentNode);
 
     });
 
 });
 
+var h2 = document.querySelector('#game-list h2');
+//console.log(h2);
 
-
-
+h2.addEventListener('click', function(e){
+    console.log(e.target);
+    console.log(e);
+});
 
 
 
