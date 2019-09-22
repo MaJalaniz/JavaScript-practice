@@ -64,3 +64,11 @@ nextEdge(5,10);
 */
 //===============================================================
 
+//Write a function that returns the remainder of two numbers
+
+function remainder(one, two){
+    return (one % two);
+}
+remainder(15, 4);
+//===============================================================
+
