@@ -1,7 +1,7 @@
 //=====================Easy Challenges on Edabit========================
 
 /*
-//Return the Sum of two numbers
+//Return the Sum of two numbers.
 
 function Sum(one, two){
     return one + two;
@@ -36,3 +36,13 @@ triangle(20,20);
 
 //===============================================================
 
+//Write a function that converts hours to seconds.
+
+function timeConvert(hour){
+    return (hour * 60) * 60;
+}
+timeConvert(5);
+
+//===============================================================
+
+function nextInt()
