@@ -65,11 +65,12 @@ nextEdge(5,10);
 //===============================================================
 
 //Write a function that returns the remainder of two numbers
-
+/*
 function remainder(one, two){
     return (one % two);
 }
 remainder(15, 4);
+ */
 //===============================================================
 
 //Write a function that determines if a number is less than zero
@@ -87,20 +88,30 @@ ifZero(-12);
 //================================================================
 
 //Write a function that returns the total number of legs on the farm
-
+/*
 function animalsLegs(one, two, three){
     var chicken= 2;
     var cow = 4;
     var pig = 4;
     return ((one * chicken) + (two * cow) + (three * pig));
 }
-
 animalsLegs(1,2,3);
-
+*/
 
 //================================================================
 
+//Write a function that returns true if prob * prize > pay
 
+function ifWorthIt(prob, prize, pay){
+    if ((prob * prize) > pay){
+        return true;
+    }else if((prob * prize) < pay){
+        return false;
+    }else{
+        console.log("What game is this?");
+    }
+}
+ifWorthIt(20,100, 50);
 
 
 
