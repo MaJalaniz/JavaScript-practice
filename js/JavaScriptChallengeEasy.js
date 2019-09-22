@@ -73,7 +73,7 @@ remainder(15, 4);
 //===============================================================
 
 //Write a function that determines if a number is less than zero
-
+/*
 function ifZero(x){
     if (x <= 0){
         return true;
@@ -82,7 +82,28 @@ function ifZero(x){
     }
 }
 ifZero(-12);
+
+ */
 //================================================================
 
+//Write a function that returns the total number of legs on the farm
+
+function animalsLegs(one, two, three){
+    var chicken= 2;
+    var cow = 4;
+    var pig = 4;
+    return ((one * chicken) + (two * cow) + (three * pig));
+}
+
+animalsLegs(1,2,3);
+
+
+//================================================================
+
+
+
+
+
+//================================================================
 
 
