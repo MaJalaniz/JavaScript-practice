@@ -6,7 +6,7 @@
 function Sum(one, two){
     return one + two;
 }
-console.log(Sum(5,5));
+Sum(5,5);
 */
 //==============================================================
 /*
@@ -45,9 +45,22 @@ timeConvert(5);
 */
 //===============================================================
 
+//Write a function that returns the next Integer
+/*
 function nextInt(next){
     return next + 1;
 }
 nextInt(-5);
-
+*/
 //===============================================================
+
+//Write a function that returns the Maximum edge of a triangle
+
+/*
+function nextEdge(sideOne,sideTwo){
+    return (sideOne + sideTwo) - 1;
+}
+nextEdge(5,10);
+*/
+//===============================================================
+
