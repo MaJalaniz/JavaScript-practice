@@ -173,7 +173,7 @@ compare("left","right");
 //=================================================================
 
 //Write a string that checks if a string is empty
-
+/*
 function check(empty){
     if (empty === ""){
         return "The String is empty";
@@ -182,12 +182,26 @@ function check(empty){
     }
 }
 console.log(check(" "));
+*/
 
+//=================================================================
 
+//Write a function that concatenates first and last names
+/*
+function names(first, last){
+    return first + last;
+}
+names("Hitomi ", "Tanaka");
+*/
 
 //=================================================================
 
-//=================================================================
+//
+
+
+
+
+
 
 //=================================================================
 
