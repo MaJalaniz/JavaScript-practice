@@ -130,7 +130,7 @@ multiplesHundred(1000);
 //=================================================================
 
 //Write a function that returns true if number is multiple of 5
-
+/*
 function multiplesFive(divisor){
     if (divisor % 5 === 0){
         return "This number is divisible by 5"
@@ -138,7 +138,39 @@ function multiplesFive(divisor){
         return "try again"
     }
 }
-console.log(multiplesFive(37));
+multiplesFive(37);
+*/
+//=================================================================
+
+//Write a function that is recursive to return length of the string
+
+function stringRecurse(word,other) {
+    other = other || 0;
+    if(word.length) {
+        return stringRecurse(word.substr(1), ++other)
+    }else{
+        return other;
+    }
+}
+//console.log(stringRecurse());
+console.log(stringRecurse("supercalifragilisticespialidocious"));
+
+
 
 //=================================================================
 
+//=================================================================
+
+//=================================================================
+
+//=================================================================
+
+//=================================================================
+
+//=================================================================
+
+//=================================================================
+
+//=================================================================
+
+//=================================================================
