@@ -158,7 +158,7 @@ stringRecurse("supercalifragilisticespialidocious");
 //=================================================================
 
 //Write a function that compares strings by count of Character
-
+/*
 function compare(one, two){
     if (one.length === two.length){
         return true;
@@ -168,10 +168,22 @@ function compare(one, two){
 }
 compare("right","right");
 compare("left","right");
-
-
+*/
 
 //=================================================================
+
+//Write a string that checks if a string is empty
+
+function check(empty){
+    if (empty === ""){
+        return "The String is empty";
+    }else{
+        return "The string is NOT empty"
+    }
+}
+console.log(check(" "));
+
+
 
 //=================================================================
 
