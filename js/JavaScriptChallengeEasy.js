@@ -196,12 +196,13 @@ names("Hitomi ", "Tanaka");
 
 //=================================================================
 
-//
-
-
-
-
-
+//Write a function that reverses an array
+/*
+function reverseMe(lists){
+    return lists.reverse();
+}
+reverseMe([1,2,3,4,5]);
+*/
 
 //=================================================================
 
