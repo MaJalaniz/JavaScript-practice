@@ -101,7 +101,7 @@ animalsLegs(1,2,3);
 //================================================================
 
 //Write a function that returns true if prob * prize > pay
-
+/*
 function ifWorthIt(prob, prize, pay){
     if ((prob * prize) > pay){
         return true;
@@ -112,9 +112,19 @@ function ifWorthIt(prob, prize, pay){
     }
 }
 ifWorthIt(20,100, 50);
-
-
-
+*/
 //================================================================
 
+//Write a function that returns Multiples of 100
 
+/*
+function multiples(divisor){
+    if (divisor % 100 === 0){
+        return "This number is divisible by 100"
+    }else{
+        return "try again"
+    }
+}
+multiples(1000);
+*/
+//=================================================================
