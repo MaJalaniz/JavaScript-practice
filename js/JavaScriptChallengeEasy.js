@@ -206,6 +206,20 @@ reverseMe([1,2,3,4,5]);
 
 //=================================================================
 
+//Write a function that finds the index
+
+function index(myArray, num){
+    if(myArray.includes(num)){
+        return "FOUND " + num;
+    }else {
+        return num + " is NOT FOUND"
+    }
+
+}
+console.log(index([1,2,3,4,5,6,7,10], 8));
+
+
+
 //=================================================================
 
 //=================================================================
