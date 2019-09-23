@@ -143,7 +143,7 @@ multiplesFive(37);
 //=================================================================
 
 //Write a function that is recursive to return length of the string
-
+/*
 function stringRecurse(word,other) {
     other = other || 0;
     if(word.length) {
@@ -152,12 +152,24 @@ function stringRecurse(word,other) {
         return other;
     }
 }
-//console.log(stringRecurse());
-console.log(stringRecurse("supercalifragilisticespialidocious"));
-
-
+stringRecurse("supercalifragilisticespialidocious");
+*/
 
 //=================================================================
+
+//Write a function that compares strings by count of Character
+
+function compare(one, two){
+    if (one.length === two.length){
+        return true;
+    }else{
+        return false;
+    }
+}
+compare("right","right");
+compare("left","right");
+
+
 
 //=================================================================
 
