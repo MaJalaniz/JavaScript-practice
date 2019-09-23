@@ -115,16 +115,30 @@ ifWorthIt(20,100, 50);
 */
 //================================================================
 
-//Write a function that returns Multiples of 100
+//Write a function that returns true if number is multiple of 100
 
 /*
-function multiples(divisor){
+function multiplesHundred(divisor){
     if (divisor % 100 === 0){
         return "This number is divisible by 100"
     }else{
         return "try again"
     }
 }
-multiples(1000);
+multiplesHundred(1000);
 */
 //=================================================================
+
+//Write a function that returns true if number is multiple of 5
+
+function multiplesFive(divisor){
+    if (divisor % 5 === 0){
+        return "This number is divisible by 5"
+    }else{
+        return "try again"
+    }
+}
+console.log(multiplesFive(37));
+
+//=================================================================
+
