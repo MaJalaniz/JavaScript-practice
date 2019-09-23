@@ -209,14 +209,15 @@ reverseMe([1,2,3,4,5]);
 //Write a function that finds the index
 
 function index(myArray, num){
-    if(myArray.includes(num)){
-        return "FOUND " + num;
-    }else {
-        return num + " is NOT FOUND"
+    if(myArray.indexOf(num) >= 0){
+        return "number "+ num + " is FOUND at index " + myArray.indexOf(num);
+    }else if(myArray.indexOf(num) === -1) {
+        return "number "+ num + " is NOT FOUND in the array";
     }
 
 }
-console.log(index([1,2,3,4,5,6,7,10], 8));
+index([1,2,3,4,200,6,7,10], 3);
+index([1,2,3,4,200,6,7,10], 300);
 
 
 
