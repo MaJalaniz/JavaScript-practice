@@ -246,10 +246,14 @@ console.log(twoArrays([1,3,5,7],[2,4,6,8]));
 
 //=================================================================
 
+//Write an arrow function (es6) that takes a name and returns a greeting
+/*
+let greeting = (hello) => {return "Hello " + hello + "!"};
 
-
-
-
-
+greeting("Rias");
+*/
 
 //=================================================================
+
+//Write a function that takes in an Object and returns a string with facts
+
