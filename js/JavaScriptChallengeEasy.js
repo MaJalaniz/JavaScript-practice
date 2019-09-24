@@ -224,7 +224,7 @@ index([1,2,3,4,200,6,7,10], 300);
 //=================================================================
 
 //Write a function that returns the last element in an array
-
+/*
 function lastItem(myArray){
     if(myArray.reverse()){
         return myArray[0];
@@ -232,15 +232,17 @@ function lastItem(myArray){
 
 }
 lastItem([1,2,3,4,5,6,7,200]);
-
+*/
 
 //=================================================================
 
-
-
-
-
-
+//Write a function that concatenates two integer arrays
+/*
+function twoArrays(one, two){
+    return one.concat(two).sort();
+}
+console.log(twoArrays([1,3,5,7],[2,4,6,8]));
+*/
 
 //=================================================================
 
