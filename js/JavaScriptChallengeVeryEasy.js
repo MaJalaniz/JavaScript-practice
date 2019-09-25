@@ -1,4 +1,4 @@
-//=====================Easy Challenges on Edabit========================
+//=====================Very Easy Challenges on Edabit========================
 
 /*
 //Return the Sum of two numbers.
