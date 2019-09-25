@@ -257,3 +257,10 @@ greeting("Rias");
 
 //Write a function that takes in an Object and returns a string with facts
 
+function volume(box){
+    return box.width * box.length * box.height;
+}
+volume({width: 2, height: 2, length: 2});
+
+//================================================================
+
