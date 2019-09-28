@@ -1,3 +1,4 @@
+"use strict";
 //===================== Easy Challenges on Edabit ======================
 
 //======================================================================
@@ -15,8 +16,8 @@ console.log(match());
     //Write a function that finds the smallest and largest numbers
 
 function numbers(myArray){
-    more = Math.max.apply(null, myArray);
-    less = Math.min.apply(null,myArray);
+    var more = Math.max.apply(null, myArray);
+    var less = Math.min.apply(null,myArray);
     return "The biggest number is: " + more + " and the smallest is : " + less;
 }
 console.log(numbers([0,1,2,3,4,5,400, 300]));
@@ -39,7 +40,10 @@ console.log(christmas(11,25));
 
 //======================================================================
 
-function opponent() {
+        //Make a game of Rock Paper Scissors
+
+function player(choice){
+    function opponent() {
         var janken = Math.floor(1 + (Math.random() * 3));
 
         if (janken === 1) {
@@ -53,8 +57,6 @@ function opponent() {
         }
 
     }
-function player(choice){
-    opponent();
 
     if(opponent() === "Rock" && choice === 3){
         return "Rock beats Scissors: Comp win";
@@ -72,7 +74,7 @@ function player(choice){
         return "Tie: Go again";
     }
 }
-console.log(player());//<-- your choice here
+console.log(player(3));//<-- your choice here
 
 
 
