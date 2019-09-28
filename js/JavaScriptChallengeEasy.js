@@ -37,10 +37,42 @@ var christ = new Date("December 25");
 }
 console.log(christmas(11,25));
 
-
 //======================================================================
 
+function opponent() {
+        var janken = Math.floor(1 + (Math.random() * 3));
 
+        if (janken === 1) {
+            return "Rock";
+        } else if (janken === 2) {
+            return "Paper";
+        } else if (janken === 3) {
+            return "Scissors";
+        } else {
+            return "Best two out of three?";
+        }
+
+    }
+function player(choice){
+    opponent();
+
+    if(opponent() === "Rock" && choice === 3){
+        return "Rock beats Scissors: Comp win";
+    }else if(opponent() === "Scissors" && choice === 2){
+        return "Scissors beats Paper: Comp wins";
+    }else if (opponent() === "Paper" && choice === 1){
+        return "Paper beats Rock: Comp wins";
+    }else if(opponent() === "Rock" && choice === 2){
+        return "Rock loses to Paper: Player wins";
+    }else if(opponent() === "Scissors" && choice === 1){
+        return "Scissors loses to Rock: Player wins";
+    }else if(opponent() === "Paper" && choice === 3){
+        return "Paper loses to Scissors: Player wins"
+    }else{
+        return "Tie: Go again";
+    }
+}
+console.log(player());//<-- your choice here
 
 
 
