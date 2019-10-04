@@ -14,19 +14,19 @@ console.log(match());
 //======================================================================
 
     //Write a function that finds the smallest and largest numbers
-
+/*
 function numbers(myArray){
     var more = Math.max.apply(null, myArray);
     var less = Math.min.apply(null,myArray);
     return "The biggest number is: " + more + " and the smallest is : " + less;
 }
 console.log(numbers([0,1,2,3,4,5,400, 300]));
-
+*/
 
 //======================================================================
 
     //Write a function that checks if today is Christmas
-
+/*
 function christmas(month, day) {
 var christ = new Date("December 25");
 
@@ -37,11 +37,11 @@ var christ = new Date("December 25");
     }
 }
 console.log(christmas(11,25));
-
+*/
 //======================================================================
 
         //Make a game of Rock Paper Scissors
-
+/*
 function player(choice){
     function opponent() {
         var janken = Math.floor(1 + (Math.random() * 3));
@@ -75,20 +75,73 @@ function player(choice){
     }
 }
 console.log(player(3));//<-- your choice here
-
-
-
-//======================================================================
-
-
-
+*/
 
 
 //======================================================================
 
+    //Am I seeing double?
+/*
+function two(doubles){
+    for(var i = 0; i < doubles.length; i++){
+       if(doubles[0] !== doubles[1])
+    }
+    //does 0 == 1,2,3,4,5 and repeat with 1 ++
 
+}
+console.log(two(["one", "two", "three", "four", "four", "five"]));
 
+*/
+//======================================================================
 
+function magic(){
+    var janken = Math.floor(1 + (Math.random() * 20));
+//use a switch case here? V
+    if(janken === 1){
+        return "As I see it, yes.";
+    }else if(janken === 2){
+        return "Ask again later.";
+    }else if(janken === 3){
+        return "Better not tell you now.";
+    }else if(janken === 4){
+        return "Cannot predict now.";
+    }else if(janken === 5){
+        return "Concentrate and ask again.";
+    }else if(janken === 6){
+        return "Don't count on it.";
+    }else if(janken === 7){
+        return "It is certain.";
+    }else if(janken === 8){
+        return "It is decidedly so.";
+    }else if(janken === 9){
+        return "Most likely.";
+    }else if(janken === 10){
+        return "My reply is no.";
+    }else if(janken === 11){
+        return "My sources say no";
+    }else if(janken === 12){
+        return "Outlook not so good.";
+    }else if(janken === 13){
+        return "Outlook good";
+    }else if(janken === 14){
+        return "Reply hazy, try again.";
+    }else if(janken === 15){
+        return "Signs point to yes.";
+    }else if(janken === 16){
+        return "Very doubtful.";
+    }else if(janken === 17){
+        return "Without a doubt.";
+    }else if(janken === 18){
+        return "Yes.";
+    }else if(janken === 19){
+        return "Yes-definitely.";
+    }else if(janken === 20){
+        return "You may rely on it.";
+    }else{
+        return "Retry";
+    }
+}
+console.log(magic());
 
 //======================================================================
 
