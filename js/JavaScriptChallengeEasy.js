@@ -93,7 +93,7 @@ console.log(two(["one", "two", "three", "four", "four", "five"]));
 
 */
 //======================================================================
-
+/*
 function magic(){
     var janken = Math.floor(1 + (Math.random() * 20));
 //use a switch case here? V
@@ -143,10 +143,23 @@ function magic(){
 }
 console.log(magic());
 
+
+ */
 //======================================================================
 
+                //Make a Circle with OOP and ES6 (Medium Challenge)
+class Circle{
+    constructor(radius){
+        this.getArea = function () { return (Math.PI * (radius * radius))};
+        this.getPerimeter = function(){ return ((2 * Math.PI) * radius)};
+    }
+}
+let round = new Circle(11);
+round.getArea();
 
-
+let round2 = new Circle(5);
+console.log(round.getArea());
+console.log(round2.getPerimeter());
 
 
 //======================================================================
