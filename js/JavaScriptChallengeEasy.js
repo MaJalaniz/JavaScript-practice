@@ -164,9 +164,20 @@ console.log(round2.getPerimeter());
 
 //======================================================================
 
+                //Equality of 3 values (Medium Challenge)
 
-
-
+function values(a,b,c){
+    if(a === b && a === c && c === a && b === c){
+        return "3"
+    }else if(a !== b && a !== c && c !== a && b !== c){
+        return "0";
+    }else if (a !== b || b !== c || a === c){
+        return "2";
+    }else{
+        return "Retry";
+    }
+}
+console.log(values(2,3,3,));
 
 //======================================================================
 
