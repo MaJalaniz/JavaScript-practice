@@ -148,6 +148,7 @@ console.log(magic());
 //======================================================================
 
                 //Make a Circle with OOP and ES6 (Medium Challenge)
+
 class Circle{
     constructor(radius){
         this.getArea = function () { return (Math.PI * (radius * radius))};
@@ -162,10 +163,12 @@ console.log(round.getArea());
 console.log(round2.getPerimeter());
 
 
+
+
 //======================================================================
 
                 //Equality of 3 values (Medium Challenge)
-
+/*
 function values(a,b,c){
     if(a === b && a === c && c === a && b === c){
         return "3"
@@ -179,10 +182,45 @@ function values(a,b,c){
 }
 console.log(values(2,3,3,));
 
+
+ */
 //======================================================================
+                //Book Shelf (Hard Challenge)
 
+ class library {
+    constructor(title, author){
+        this.title = title;
+        this.author = author;
+        this.getTitle = function() {return "Title: " + title};
+        this.getAuthor = function() {return "Author: " + author};
+    }
+}
+let tf = new library("The Fountainhead", "Ayn Rand");
+let pp = new library("Pride and Predjudice", "Jane Austen");
+let h = new library("Hamlet", "William Shakespeare");
+let wp = new library( "War and Peace", "Leo Tolstoy");
+/*
+console.log(tf);
+console.log(pp);
+console.log(h);
+console.log(wp);
 
+console.log(tf.getTitle());
+console.log(tf.getAuthor());
+console.log(tf.title + " by " + tf.author);
 
+console.log(pp.getTitle());
+console.log(pp.getAuthor());
+console.log(pp.title + " by " + pp.author);
+
+console.log(h.getTitle());
+console.log(h.getAuthor());
+console.log(h.title + " by " + h.author);
+
+console.log(wp.getTitle());
+console.log(wp.getAuthor());
+console.log(wp.title + " by " + wp.author);
+ */
 
 
 //======================================================================
