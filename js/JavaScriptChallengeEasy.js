@@ -224,3 +224,25 @@ console.log(wp.title + " by " + wp.author);
 
 
 //======================================================================
+            //Write a function that returns the first occurence of a vowel
+
+function vowels(one){
+
+    for(let i = 0; i < one.length; i++){
+        //console.log(one[i]);
+        if(one[i] === "a"){
+            return one[i]  + " can be found at index " + i;
+        }else if(one[i] !== "a" && one[i] === "e"){
+            return one[i]  + " can be found at index " + i;
+        }else if(one[i] !== "a" && one[i] !== "e" && one[i] === "i"){
+            return one[i]  + " can be found at index " + i;
+        }else if(one[i] !== "a" && one[i] !== "e" && one[i] !== "i" && one[i] === "o"){
+            return one[i]  + " can be found at index " + i;
+        }else if(one[i] !== "a" && one[i] !== "e" && one[i] !== "i" && one[i] !== "o" && one[i] === "u"){
+            return one[i]  + " can be found at index " + i;
+        }
+    }
+}
+console.log(vowels("zxcvba"));
+
+//======================================================================
