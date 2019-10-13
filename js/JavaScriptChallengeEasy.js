@@ -224,7 +224,7 @@ console.log(wp.title + " by " + wp.author);
 
 
 //======================================================================
-            //Write a function that returns the first occurence of a vowel
+    //Write a function that returns the first occurance of a vowel (easy challenge)
 
 function vowels(one){
 
@@ -246,3 +246,14 @@ function vowels(one){
 console.log(vowels("zxcvba"));
 
 //======================================================================
+
+    //Reverse the case: upper to lower and vice versa (easy challenge)
+
+function cases(words){
+    if(words.length > 0){
+        return words.toUpperCase();
+    }else{
+        return words.toLowerCase();
+    }
+}
+console.log(cases("Happy"));
